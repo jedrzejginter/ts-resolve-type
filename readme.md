@@ -42,9 +42,8 @@ type MyType = {
 
 ```ts
 import { resolve } from "ts-resolve-type";
-// const { resolve } = require("ts-resolve-type");
 
-const resolved = resolve("./src/index.ts", "MyType");
+const resolved = await resolve("./src/index.ts", "MyType");
 
 /*
 const resolved = `type MyType = {
