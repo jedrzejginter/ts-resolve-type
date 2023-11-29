@@ -9,4 +9,4 @@ const obj = z.object({
   ]),
 });
 
-export type MyType = z.infer<typeof obj>;
+export type InputType = z.infer<typeof obj>;

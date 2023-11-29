@@ -11,6 +11,8 @@
 - The type has to be `export`'ed
   - Most probably it's because TypeScript checker ignores types that are not used (??)
 - Does not resolve `enum`
+- Does not preserve function argument names
+  - Prints `args_0`, `args_1` etc instead of original function arguments names
 
 ## Installation
 

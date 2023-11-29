@@ -9,16 +9,11 @@ type Ret = {
   [k in Keys]: string | boolean;
 };
 
-export type MyType = {
+export type InputType = {
   [K in Keys]: number;
 } & {
   func: (a: A | Ret) => Ret;
-  asyncfunc: (a: A) => Promise<Ret>;
+  asyncfunc: (a: A, b: number) => Promise<Ret>;
   funcis: (b: number) => b is 3;
   arr: Ret[];
-};
-
-export type MyType2 = {
-  foo?: number;
-  bar: number | undefined;
 };

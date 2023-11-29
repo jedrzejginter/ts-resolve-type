@@ -1,7 +1,7 @@
 import ts from "typescript";
 
 import { dirname, join, parse } from "node:path";
-import { rmSync, writeFileSync } from "node:fs";
+import { readFileSync, rmSync, writeFileSync } from "node:fs";
 import { randomBytes } from "node:crypto";
 
 export async function resolve(
@@ -20,7 +20,9 @@ export async function resolve(
     writeFileSync(
       tmpPath,
       `
-      import { ${typeAlias} } from './${parse(file).name}';
+      ${readFileSync(file, "utf-8")}
+
+      /* injected by ts-resolve-type */
 
       type __expand__<T> = 
         T extends Promise<infer R> 
