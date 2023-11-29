@@ -1,6 +1,6 @@
 {
   "name": "ts-resolve-type",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Get resolved TypeScript type",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -30,6 +30,8 @@
     "resolve"
   ],
   "author": "Jędrzej Ginter <hello@jedrzejginter.com>",
+  "sideEffects": false,
+  "repository": "jedrzejginter/ts-resolve-type",
   "license": "MIT",
   "engines": {
     "node": ">= 16"
