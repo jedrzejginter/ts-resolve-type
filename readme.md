@@ -24,7 +24,7 @@ export type MyType = {
 
 ### CLI
 
-```
+```console
 npx ts-resolve-type src/index.ts MyType
 ```
 
