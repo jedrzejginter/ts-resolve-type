@@ -4,6 +4,11 @@
 
 - Node 16 or higher
 - TypeScript 5 or higher
+  - `strict: true` in `tsconfig.json`
+
+## Known limitations
+
+- Does not resolve `enum`
 
 ## Installation
 
@@ -23,6 +28,8 @@ export type MyType = {
 ```
 
 ### CLI
+
+Find `MyType` in `src/index.ts` file and get the output type:
 
 ```console
 npx ts-resolve-type src/index.ts MyType
